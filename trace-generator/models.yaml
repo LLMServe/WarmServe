@@ -1,0 +1,17 @@
+# Edit model and dataset paths below to match your environment before running.
+cluster:
+  ngpus_per_node: 8
+  nnodes: 2
+models:
+- dataset_source: /path/to/datasets/AzureLLMInferenceTrace_conv_1week.csv
+  name: /path/to/models/llama-7b/tp1_pp1/0
+  id: llm-0
+- dataset_source: /path/to/datasets/AzureLLMInferenceTrace_conv_1week.csv
+  name: /path/to/models/llama-7b/tp1_pp1/1
+  id: llm-1
+- dataset_source: /path/to/datasets/AzureLLMInferenceTrace_conv_1week.csv
+  name: /path/to/models/llama-13b/tp2_pp1/0
+  id: llm-2
+- dataset_source: /path/to/datasets/AzureLLMInferenceTrace_conv_1week.csv
+  name: /path/to/models/llama-70b/tp4_pp1/0
+  id: llm-3
